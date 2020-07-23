@@ -11,11 +11,12 @@ function FahrenheitCentigrados ()
     let centigrados;
 
     temperatura = document.getElementById ("txtIdTemperatura").value;
-    temperatura = parseInt (temperatura);
+    temperatura = parseFloat (temperatura);
 
     centigrados = (temperatura -32)/1.8;
+    centigrados = centigrados.toFixed(2);
 
-    alert ("La temperatura en º C es: " + centigrados);
+    alert (temperatura +" grados fahrenheit  en centigrados es  " + centigrados +"grados");
 }
 
 function CentigradosFahrenheit () 
@@ -24,10 +25,10 @@ function CentigradosFahrenheit ()
     let fahrenheit;
     
     temperatura = document.getElementById ("txtIdTemperatura").value;
-    temperatura = parseInt (temperatura);
+    temperatura = parseFloat (temperatura);
 
     fahrenheit = temperatura*(9/5)+32;
     
-    alert ("La temperatura en º F es: " + fahrenheit);
+    alert (temperatura + " grados centigrados en Fahrenheit es: " + fahrenheit.toFixed(2)+ "grados");
     
 }

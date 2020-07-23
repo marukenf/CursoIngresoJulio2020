@@ -12,11 +12,11 @@ function Sumar ()
     let resultadoSuma;
 
     precioUno = document.getElementById("txtIdPrecioUno").value;
-    precioUno = parseInt(precioUno);
+    precioUno = parseFloat(precioUno);
     precioDos = document.getElementById("txtIdPrecioDos").value;
-    precioDos = parseInt (precioDos);
+    precioDos = parseFloat (precioDos);
     precioTres = document.getElementById("txtIdPrecioTres").value;
-    precioTres = parseInt (precioTres); 
+    precioTres = parseFloat (precioTres); 
 
     resultadoSuma = precioUno + precioDos + precioTres;
 
@@ -31,11 +31,11 @@ function Promedio ()
     let resultadoPromedio;
 
     precioUno = document.getElementById("txtIdPrecioUno").value;
-    precioUno = parseInt(precioUno);
+    precioUno = parseFloat(precioUno);
     precioDos = document.getElementById("txtIdPrecioDos").value;
-    precioDos = parseInt (precioDos);
+    precioDos = parseFloat (precioDos);
     precioTres = document.getElementById("txtIdPrecioTres").value;
-    precioTres = parseInt (precioTres); 
+    precioTres = parseFloat (precioTres); 
 
     resultadoSuma = (precioUno + precioDos + precioTres)/3;
 
@@ -49,11 +49,11 @@ function PrecioFinal ()
     let resultadoMasIva;
 
     precioUno = document.getElementById("txtIdPrecioUno").value;
-    precioUno = parseInt(precioUno);
+    precioUno = parseFloat(precioUno);
     precioDos = document.getElementById("txtIdPrecioDos").value;
-    precioDos = parseInt (precioDos);
+    precioDos = parseFloat (precioDos);
     precioTres = document.getElementById("txtIdPrecioTres").value;
-    precioTres = parseInt (precioTres); 
+    precioTres = parseFloat (precioTres); 
 
     resultadoMasIva =( precioUno + precioDos + precioTres)*1.21
     alert("La suma de los tres precios es:" + resultadoMasIva.toFixed(2));

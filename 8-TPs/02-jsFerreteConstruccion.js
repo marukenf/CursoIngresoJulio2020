@@ -15,9 +15,9 @@ function Rectangulo ()
     let alambreRectangulo;
     
     largo = document.getElementById("txtIdLargo").value;
-    largo = parseInt (largo);
+    largo = parseFloat (largo);
     ancho = document.getElementById("txtIdAncho").value;
-    ancho = parseInt (ancho);
+    ancho = parseFloat (ancho);
 
     alambreRectangulo = (2*largo+2*ancho)*3;
 
@@ -29,12 +29,12 @@ function Circulo ()
     let alambreCirculo;
     
     radio = document.getElementById("txtIdRadio").value;
-    radio = parseInt (radio);
+    radio = parseFloat (radio);
 
-    alambreCirculo = (2*radio*3.14)*3;
+    alambreCirculo = (2*radio*Math.PI)*3;
 
 
-    alert (`La cantidad de alambre nacesaria es ${alambreCirculo}` );
+    alert (`La cantidad de alambre nacesaria es ${alambreCirculo.toFixed(2)}` );
 
 }
 function Materiales () 
@@ -46,9 +46,9 @@ function Materiales ()
     let arena;
 
     largo = document.getElementById("txtIdLargo").value;
-    largo = parseInt (largo);
+    largo = parseFloat (largo);
     ancho = document.getElementById("txtIdAncho").value;
-    ancho = parseInt (ancho);
+    ancho = parseFloat (ancho);
 
     area = largo * ancho;
 

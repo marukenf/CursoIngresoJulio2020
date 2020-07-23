@@ -46,15 +46,12 @@ function verificar()
 		  break;
 		  case 5:alert (`lo hizo en ${contadorIntentos} usted está en la media`);
 		  break;
-		  case 6:alert (`lo hizo en ${contadorIntentos} falta técnica`);
-		  break;
-		  case 7:alert (`lo hizo en ${contadorIntentos} falta técnica`);
-		  break;
-		  case 8:alert (`lo hizo en ${contadorIntentos} falta técnica`);
-		  break;
-		  case 9:alert (`lo hizo en ${contadorIntentos} falta técnica`);
-		  break;
-		  case 10:alert (`lo hizo en ${contadorIntentos} falta técnica`);
+		  case 6:
+		  case 7:
+		  case 8:
+		  case 9:
+		  case 10:
+			  alert (`lo hizo en ${contadorIntentos} falta técnica`);
 		  break;
 		  default: alert( "mas de 10 intentos, afortunado en el amor")
 	  }

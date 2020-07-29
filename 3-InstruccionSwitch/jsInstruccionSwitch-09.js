@@ -37,7 +37,7 @@ function mostrar()
 	// en Verano: bariloche tiene un descuento del 20% cataratas y 
     // Cordoba tiene un aumento del 10% Mar del plata tiene un aumento del 20%
 
-	if(estacionIngresada=="Verano")
+	else if(estacionIngresada=="Verano")
 	{
 		switch(destinoIngresado)
 		{
@@ -63,7 +63,7 @@ function mostrar()
 	// cataratas tiene un aumento del 10% Mar del plata tiene un aumento del 10%
 	//  y Cordoba tiene el precio sin descuento
  
-	if(estacionIngresada=="Primavera" ||estacionIngresada =="Otoño")
+	else
 	{
 		switch(destinoIngresado)
 		{
@@ -81,3 +81,59 @@ function mostrar()
 		}
 	}
 }
+
+
+
+// function mostrar()
+// {
+// 	const TARIFA = 15000;
+// 	let destino;
+// 	let estacion; 
+// 	let porcentaje;
+// 	let preciofinal; 
+
+// 	destino = document.getElementById("txtIdDestino").value; 
+// 	estacion = document.getElementById("txtIdEstacion").value;
+
+// 	switch (estacion) {
+// 		case "Invierno":
+// 			if (destino == "Bariloche"){
+// 				porcentaje = 20;
+// 			}
+// 			else if (destino == "Cataratas" || destino == "Cordoba"){
+// 			    porcentaje = - 10;
+// 			}
+// 			else {
+// 				porcentaje = - 20;
+// 			}
+// 			break;
+// 		case "Verano":
+// 			if (destino == "Bariloche"){
+// 				porcentaje = - 20;
+// 			}
+// 			else if (destino == "Cataratas" || destino == "Cordoba") {
+// 				porcentaje = 10;
+// 			}
+// 			else {
+// 				porcentaje = 20;
+// 			}
+// 			break;
+// 		case "Otoño":
+// 		case "Primavera":
+// 			if (destino =="Bariloche"){
+// 				porcentaje = 10;
+// 			}
+// 			else if (destino == "Cataratas" || destino == "Mar del plata"){
+// 				porcentaje = 10;
+// 			}
+// 			else {
+// 				porcentaje = 0;
+// 			}
+// 			break;
+// 	}
+// 	preciofinal = TARIFA + TARIFA * porcentaje/100;
+	
+// 	alert("Eligío "+destino+" En "+estacion+" El costo del viaje es $"+preciofinal);
+	
+	
+

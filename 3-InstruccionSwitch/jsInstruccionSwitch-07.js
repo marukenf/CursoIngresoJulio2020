@@ -6,16 +6,29 @@ function mostrar()
 {
 	let destinoIngresado =document.getElementById("txtIdDestino").value;
 
-	switch(destinoIngresado)
-	{
-		case "Bariloche": alert (`su destino ingresado ${destinoIngresado} se encuentra en el Oeste`);
-		break;
-		case "Cataratas": alert (`su destino ingresado ${destinoIngresado} se encuentra en el Norte`);
-		break;
-		case "Mar del plata": alert (`su destino ingresado ${destinoIngresado} se encuentra en el Este`);
-		break;
-		case "Ushuaia": alert (`su destino ingresado ${destinoIngresado} se encuentra en el Sur`);
-		break;
+	// switch(destinoIngresado)
+	// {
+	// 	case "Bariloche": alert (`su destino ingresado ${destinoIngresado} se encuentra en el Oeste`);
+	// 	break;
+	// 	case "Cataratas": alert (`su destino ingresado ${destinoIngresado} se encuentra en el Norte`);
+	// 	break;
+	// 	case "Mar del plata": alert (`su destino ingresado ${destinoIngresado} se encuentra en el Este`);
+	// 	break;
+	// 	case "Ushuaia": alert (`su destino ingresado ${destinoIngresado} se encuentra en el Sur`);
+	// 	break;
+	// }
+
+	if(destinoIngresado=="Bariloche"){
+		alert (`su destino ingresado ${destinoIngresado} se encuentra en el Oeste`);
+	}
+	else if(destinoIngresado=="Cataratas"){
+		alert (`su destino ingresado ${destinoIngresado} se encuentra en el Norte`);
+	}
+	else if(destinoIngresado=="Mar del plata"){
+		alert (`su destino ingresado ${destinoIngresado} se encuentra en el Este`)
+	}
+	else{
+		alert (`su destino ingresado ${destinoIngresado} se encuentra en el Sur`);
 	}
 
 

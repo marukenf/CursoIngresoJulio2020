@@ -68,10 +68,8 @@ function mostrar()
 		{
 		case "Bariloche":	alert(`A ${destinoIngresado} No se viaja`);
 		break;
-		case "Cataratas":  
-		case "Cordoba": 	
-		case "Mar del plata":
-			 alert(`A ${destinoIngresado} Se viaja`);
+		default:
+			alert(`A ${destinoIngresado} Se viaja`);
 		break;
 		}
 	}

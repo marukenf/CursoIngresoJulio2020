@@ -12,39 +12,40 @@ function mostrar()
 	horaDelDia= parseInt(horaDelDia);
 
 	if(horaDelDia>=0 && horaDelDia <=24)
-	{
-		switch (horaDelDia)
-		{
-		case 7: alert("Es de mañana." );
-		break;
-		case 8: alert("Es de mañana.");
-		break;
-		case 9: alert("Es de mañana.");
-		break;
-		case 10: alert("Es de mañana.");
-		break;
-		case 11: alert("Es de mañana.");
-		break;
-	
-		case 12: alert("Es de tarde");
-		break;
-		case 13: alert("Es de tarde");
-		break;
-		case 14: alert("Es de tarde");
-		break;
-		case 15: alert("Es de tarde");
-		break;
-		case 16: alert("Es de tarde");
-		break;
-		case 17: alert("Es de tarde");
-		break;
-		case 18: alert("Es de tarde");
-		break;
-		case 19: alert("Es de tarde");
-		break;
+	{ 
 
-		default: alert("es de noche");
+		if(horaDelDia>=7 && horaDelDia<=11){
+			alert("es de mañana");
 		}
+		else if(horaDelDia>=12 &&horaDelDia<=19){
+			alert("es de tarde");
+		}
+		else{alert("es de noche");}
+
+	// 	switch (horaDelDia)
+	// 	{
+	// 	case 7: 
+	// 	case 8: 
+	// 	case 9: 
+	// 	case 10:
+	// 	case 11: 
+	// 		alert("Es de mañana.");
+	// 	break;
+	
+	// 	case 12:
+	// 	case 13:
+	// 	case 14:
+	// 	case 15: 
+	// 	case 16: 
+	// 	case 17: 
+	// 	case 19: 
+	// 		alert("Es de tarde");
+	// 	break;
+
+	// 	default: alert("es de noche");
+	// 	}
+	
 	}
 	else{alert("la hora no existe");}
-	}
+	
+}

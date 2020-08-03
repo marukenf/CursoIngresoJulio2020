@@ -14,7 +14,7 @@ let contadorIntentos=0;
 
 function comenzar()
 {
-   numeroAleatoreo = Math.round(Math.random()*(99)+1);    //Genero el número RANDOM entre 1 y 100
+  numeroAleatoreo = Math.round(Math.random()*(99)+1);    //Genero el número RANDOM entre 1 y 100
   alert(numeroAleatoreo);
   flag=1;
   document.getElementById("txtIdIntentos").value = contadorIntentos;

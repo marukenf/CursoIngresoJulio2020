@@ -7,6 +7,7 @@ function mostrar()
 	let suma = 0 ;
 	let multi = 1;
 	let respuesta="si";
+	let flag=0;
 
  	do
     {
@@ -16,6 +17,8 @@ function mostrar()
 		if (numero <0)
 		{	
 			multi = multi * numero;
+			flag=1;
+
 		}
 		else 
 		{
@@ -23,16 +26,19 @@ function mostrar()
 		}
 		respuesta = prompt (" Desea ingresar otro numero, responda si o no");
 
-		// while (respuesta != "si" && respuesta!= "no") 
-	    // {
-		// alert ("respuesta incorrecta");
-		// respuesta = prompt (" Desea ingresar otro numero, responda si o no");
-		// }
+		while (respuesta != "si" && respuesta!= "no") 
+	    {
+		alert ("respuesta incorrecta");
+		respuesta = prompt (" Desea ingresar otro numero, responda si o no");
+		}
+		
 
     } while (respuesta !== "no")
 
-
-
+	
+	if(flag==0){
+		multi=0;
+	}
 	document.getElementById('txtIdSuma').value = suma;
 	document.getElementById('txtIdProducto').value = multi;
 
